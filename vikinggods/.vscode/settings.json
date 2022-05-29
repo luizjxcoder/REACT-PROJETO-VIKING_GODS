@@ -1,0 +1,14 @@
+//CONFIGURAÇÕES PESSOAIS DO VSCODE
+//ESCONDE E NÃO DELETA ALGUNS ARQUIVOS DO PROJETO PARA MELHOR VISIBILIDADE
+{
+  "git.enabled": true,
+  "files.exclude": {
+    "node_modules": true,
+    ".vscode": true,
+    ".gitignore": true,
+    "package.json": true,
+    "package-lock.json": true,
+    "public": true,
+    ".dist":true
+  }
+}
