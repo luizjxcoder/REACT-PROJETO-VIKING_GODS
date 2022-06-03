@@ -13,12 +13,13 @@ const App = () => {
          <BrowserRouter>
             <Header />
             <Routes>
-               <Route path="/" element={<Home/>}/>
-               <Route path="/login" element={<Login/>}/>
+               <Route path="/" element={<Home />} />
+               <Route path="/login/*" element={<Login/>}/>
             </Routes>
             <Footer />
             </BrowserRouter>
       </div>
+      // EM ROUTE /LOGIN/* O ASTERISTICO INDICA QUE HAVERÁ OUTRAS ROTAS
    );
 }
 
