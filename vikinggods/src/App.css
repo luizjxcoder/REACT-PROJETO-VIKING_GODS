@@ -1,7 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+   padding-top: 4rem;
+  margin: 0px;
+  color: #333;
+  --type-first: Arial, Helvetica, sans-serif;
+  --type-second: "Spectral", Georgia;
+  font-family: var (--type-first);
+}
+
+h1,
+h2,
+h3,
+h4 p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
 input {
   display: block;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: var(--type-first);
 }
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
+
+a {
+   text-decoration: none;
+}
+
+/*CONTEÚDO GERAL DO SITE*/
+.container {
+max-width: 50rem; /*50 x 16 = 800px tamanho máximo do site*/
+padding: 0 1rem;
+margin: 0 auto;
 }
