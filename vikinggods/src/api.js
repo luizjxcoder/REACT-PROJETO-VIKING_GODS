@@ -8,7 +8,19 @@ export function TOKEN_POST(body) {
          headers: {
             'Content-Type': 'application/json',
          },
-            body: JSON.stringify(body),
+         body: JSON.stringify(body),
       },
-   }
+   };
+}
+
+export function USER_GET(token) {
+return {
+   url: API_URL + '/api/user',
+   options: {
+      method: 'GET',
+      headers: {
+         Authorization: 'Bearer ' + token
+      },
+   },
+};
 }
