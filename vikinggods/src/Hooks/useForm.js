@@ -5,10 +5,16 @@ import React from 'react';
 
 const types = {
    email: {
-      regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+      regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-6]+\.)+[a-zA-Z]{2,}))$/,
       message: 'Preencha com email válido'
    },
-}; 
+
+/*REGEX PARA VALIDAR SOMENTE SENHAS FORTES*/
+//    password: {
+//       regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/,
+//       message: 'A senha não é forte'
+//    },
+ }; 
 
 const useForm = (type) => {
    const [value, setValue] = React.useState('');
