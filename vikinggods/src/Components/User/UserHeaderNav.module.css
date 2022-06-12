@@ -58,8 +58,8 @@
   width: 1.2rem;
   height: 2px;
   border-radius: 2px;
-  background: currentColor;
-  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  background: #333;
+  box-shadow: 0 6px #333, 0 -6px #333;
   transition: 0.2s;
 }
 
@@ -77,7 +77,8 @@
   transform: rotate(90deg);
   width: 4px;
   height: 4px;
-  box-shadow: 0 8px currentColor, 0 -8px currentColor;
+  background: #fb1;
+  box-shadow: 0 8px #fb1, 0 -8px #fb1;
 }
 
 .navMobile {
