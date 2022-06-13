@@ -1,15 +1,15 @@
 import React from 'react';
 import Feed from './Feed/Feed';
-import Head from './Helper/Head';
+//import Head from './Helper/Head';
 
 const Home = () => {
   return (
     <section className="container mainContainer">
-      <Head
+      <div
         title="Fotos"
         description="Home do site Viking Gods, com o feed de fotos."
       />
-      <Feed />
+      <div />
     </section>
   );
 };
