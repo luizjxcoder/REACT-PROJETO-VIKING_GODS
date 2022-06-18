@@ -7,12 +7,12 @@ import Button from '../Forms/Button';
 import Error from '../Helper/Error';
 import { PHOTO_POST } from '../../api';
 import { useNavigate } from 'react-router-dom';
-// import Head from '../Helper/Head';
+//import Head from '../Helper/Head';
 
 const UserPhotoPost = () => {
   const nome = useForm();
-  const peso = useForm('number');
-  const idade = useForm('number');
+  const god = useForm('text');
+  const representacao = useForm('text');
   const [img, setImg] = React.useState({});
   const { data, error, loading, request } = useFetch();
   const navigate = useNavigate();
@@ -26,14 +26,15 @@ const UserPhotoPost = () => {
     const formData = new FormData();
     formData.append('img', img.raw);
     formData.append('nome', nome.value);
-    formData.append('peso', peso.value);
-    formData.append('idade', idade.value);
+    formData.append('god', god.value);
+    formData.append('representacao', representacao.value);
 
     const token = window.localStorage.getItem('token');
     const { url, options } = PHOTO_POST(formData, token);
     request(url, options);
-  }
+  }   
 
+// [x]preview das postagens
   function handleImgChange({ target }) {
     setImg({
       preview: URL.createObjectURL(target.files[0]),
@@ -46,8 +47,8 @@ const UserPhotoPost = () => {
       {/* <Head title="Poste sua foto" /> */}
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
-        <Input label="Peso" type="number" name="peso" {...peso} />
-        <Input label="Idade" type="number" name="idade" {...idade} />
+        <Input label="God" type="text" name="god" {...god} />
+        <Input label="Representação" type="text" name="representacao" {...representacao} />
         <input
           className={styles.file}
           type="file"
