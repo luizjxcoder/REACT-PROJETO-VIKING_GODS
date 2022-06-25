@@ -27,11 +27,11 @@ const PhotoContent = ({ data }) => {
                   <span className={styles.visualizacoes}>{photo.acessos}</span>
                </p>
                <h1 className="title">
-                  <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
+                  <Link to={`/perfil/${photo.id}`}>{photo.title}</Link>
                </h1>
-               <ul className={styles.attribute}>
-                  <li>{photo.peso} kg</li>
-                  <li>{photo.idade} anos</li>
+               <ul className={styles.attributes}>
+                  <li>{photo.peso} kg </li>
+                  <li>{photo.idade} anos </li>
                </ul>
             </div>
          </div>

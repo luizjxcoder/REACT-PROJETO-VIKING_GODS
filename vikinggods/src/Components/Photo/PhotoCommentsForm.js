@@ -5,12 +5,11 @@ import Error from '../Helper/Error';
 import { COMMENT_POST } from '../../api';
 import styles from './PhotoCommentsForm.module.css';
 
-
 const PhotoCommentsForm = ({ id, setComments, single }) => {
   const [comment, setComment] = React.useState('');
-   const { request, error } = useFetch();
+  const { request, error } = useFetch();
 
-    async function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     const { url, options } = COMMENT_POST(id, { comment });
     const { response, json } = await request(url, options);
@@ -19,7 +18,7 @@ const PhotoCommentsForm = ({ id, setComments, single }) => {
       setComments((comments) => [...comments, json]);
     }
   }
-   
+
   return (
     <form
       className={`${styles.form} ${single ? styles.single : ''}`}

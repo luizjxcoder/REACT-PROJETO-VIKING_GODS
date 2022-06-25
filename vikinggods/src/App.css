@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
 
+::-webkit-scrollbar {
+   width: 10px;
+   background-color: white;
+}
+::-webkit-scrollbar-track {
+  background: rgb(235, 235, 236);
+}
+::-webkit-scrollbar-button {
+   background-color: rgb(8, 166, 194);
+      border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgb(187, 184, 184);
+   border-radius: 5px;
+}
 * {
   box-sizing: border-box;
 }

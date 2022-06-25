@@ -43,12 +43,14 @@
 .button:focus, /*HACK retira efeito e cor das bordas do elemento*/
 .button:hover {
   outline: none;
+  background: #fb1;
 }
 
 .button:focus svg path,/*HACK path seleciona todo svg, tanto borda com traçados internos podendo ser agrupados os detalhes da imagem*/
 .button:hover svg path {
-  fill: #fea;
-  stroke: #fb1;
+  outline: none;
+  fill: white;
+  background: #fb1;
 }
 
 .button:focus svg g,
