@@ -14,7 +14,7 @@ const LoginCreate = () => {
   const password = useForm();
 
   const { userLogin } = React.useContext(UserContext);
-  const { loading, error} = useFetch();
+  const { loading, error, request} = useFetch();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -23,7 +23,7 @@ const LoginCreate = () => {
       email: email.value,
       password: password.value,
     });
-    const { response } = await fetch(url, options);
+    const { response } = await request(url, options);
     if (response.ok) userLogin(username.value, password.value);
   }
 
