@@ -37,7 +37,7 @@ const UserPhotoPost = () => {
 // [x]preview das postagens
   function handleImgChange({ target }) {
     setImg({
-      preview: URL.createObjectURL(target.files[0]),
+      preview: URL.createObjectURL(target.files[0]),/*HACK PREVIEW DA IMAGEM AO POSTAR*/
       raw: target.files[0],
     });
   }

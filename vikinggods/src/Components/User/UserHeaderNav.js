@@ -37,7 +37,7 @@ const UserHeaderNav = () => {
           mobileMenu && styles.navMobileActive
         }`}
       >
-        <NavLink to="/conta" end>
+      <NavLink to="/conta" end>
           <MinhasFotos />
           {mobile && 'Minhas Fotos'}
         </NavLink>
@@ -49,10 +49,10 @@ const UserHeaderNav = () => {
           <AdicionarFoto />
           {mobile && 'Adicionar Foto'}
            </NavLink>
-           <NavLink to="conta/sair">
-              <Sair />
-          {mobile && 'Sair'}
-        </NavLink>
+           <button onClick={userLogout}>
+              < Sair />
+              {mobile && 'Sair'}
+              </button>
       </nav>
     </>
   );

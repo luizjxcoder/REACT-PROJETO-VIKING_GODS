@@ -17,11 +17,11 @@
   cursor: pointer;
 }
 
-.photo > div {
+.photo img {
   grid-area: 1/1;
 }
 
-.photo vizualizacao {
+.photo visualizacao {
   background: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 1rem;
@@ -32,7 +32,7 @@
   display: none;
 }
 
-.vizualizacao::before {
+.visualizacao::before {
   width: 16px;
   height: 10px;
   content: "";
@@ -41,6 +41,6 @@
   background: url("../../Assets/visualizacao.svg") no-repeat;
 }
 
-.photo:hover .vizualizacao {
+.photo:hover .visualizacao {
   display: flex;
 }

@@ -1,6 +1,6 @@
-import React from 'react'
-import useFetch from '../../Hooks/useFetch';
+import React from 'react';
 import FeedPhotosItem from './FeedPhotosItem';
+import useFetch from '../../Hooks/useFetch';
 import { PHOTOS_GET } from '../../api';
 import Error from '../Helper/Error';
 import Loading from '../Helper/Loading';
@@ -24,13 +24,13 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   if (data)
     return (
       <ul className={`${styles.feed} animeLeft`}>
-          {((photo) => (
-             <FeedPhotosItem
-                key={photo.id}
-                photo={photo}
-                setModalPhoto={setModalPhoto}
-             />
-          ))}
+        {data.map((photo) => (
+          <FeedPhotosItem
+            key={photo.id}
+            photo={photo}
+            setModalPhoto={setModalPhoto}
+          />
+        ))}
       </ul>
     );
   else return null;

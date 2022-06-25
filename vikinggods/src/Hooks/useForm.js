@@ -11,15 +11,15 @@ const types = {
 
    /*HACK REGEX PARA VALIDAR SOMENTE SENHAS FORTES
    //    password: {
-   //       regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/,
-   //       message: 'A senha não é forte'
+   //    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/,
+   //    message: 'A senha não é forte'
    //    },*/
 
-   /*HACK REGEX PARA VALIAR NUMEROS NAS POSTAGENS*/
-   //    number: {
-   //       regex: /^\d+$/,
-   //       message: 'Utilize números apenas.',
-   //  }
+   //REGEX PARA VALIAR NUMEROS NAS POSTAGENS
+         number: {
+         regex: /^\d+$/,
+         message: 'Utilize números apenas.',
+       },
     };
 
       const useForm = (type) => {
