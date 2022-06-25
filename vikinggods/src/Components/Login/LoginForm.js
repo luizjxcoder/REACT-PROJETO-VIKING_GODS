@@ -7,21 +7,22 @@ import { UserContext } from '../../UserContext';
 import Error from '../Helper/Error';
 import styles from './LoginForm.module.css';
 import stylesBtn from '../Forms/Button.module.css';
-//import Head from '../Helper/Head';
 
 const LoginForm = () => {
   const username = useForm();
-  const password = useForm();
+   const password = useForm();
 
   const { userLogin, error, loading } = React.useContext(UserContext);
 
-  async function handleSubmit(event) {
-    event.preventDefault();
+   async function handleSubmit(event) {
 
-    if (username.validate() && password.validate()) {
-      userLogin(username.value, password.value);
-    }
-  }
+      event.preventDefault();
+
+      if (username.validate() && password.validate()) {
+         userLogin(username.value, password.value);
+      
+      }
+   }
 
   return (
     <section className="animeLeft">

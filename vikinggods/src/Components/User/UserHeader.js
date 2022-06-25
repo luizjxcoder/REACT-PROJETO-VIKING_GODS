@@ -20,7 +20,7 @@ const UserHeader = () => {
          default:
             setTitle('Minha Conta');
       }
-   }, [location, setTitle]);
+   }, [location]);
 
   return (
      <header className={styles.header}>

@@ -22,19 +22,18 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   if (error) return <Error error={error} />;
   if (loading) return <Loading />;
   if (data)
-
- return (
+    return (
       <ul className={`${styles.feed} animeLeft`}>
-        {data.map((photo) => (
-          <FeedPhotosItem
-            key={photo.id}
-            photo={photo}
-            setModalPhoto={setModalPhoto}
-          />
-        ))}
+          {((photo) => (
+             <FeedPhotosItem
+                key={photo.id}
+                photo={photo}
+                setModalPhoto={setModalPhoto}
+             />
+          ))}
       </ul>
-   );
-   else return null;
+    );
+  else return null;
 };
 
 export default FeedPhotos;
