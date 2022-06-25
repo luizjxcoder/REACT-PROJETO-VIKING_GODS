@@ -18,7 +18,7 @@ const UserHeader = () => {
             setTitle('Estatisticas');
             break;
          default:
-            setTitle('Minha Conta');
+            setTitle('Meu Feed');
       }
    }, [location]);
 

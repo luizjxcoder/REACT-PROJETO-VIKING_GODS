@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
+//IMPORT DOS SVGs
 import { ReactComponent as MinhasFotos } from '../../Assets/feed.svg';
 import { ReactComponent as Estatisticas } from '../../Assets/estatisticas.svg';
 import { ReactComponent as AdicionarFoto } from '../../Assets/adicionar.svg';
@@ -15,12 +16,13 @@ const UserHeaderNav = () => {
 
   const { pathname } = useLocation();
   React.useEffect(() => {
-    setMobileMenu(false);
+    setMobileMenu(false); 
   }, [pathname]);
 
   return (
-    <>
-      {mobile && (
+     <> {/*fragmento de um seletor pois não poder haver 2 iténs no retorno*/}
+        {/*menu hamburguer ativo no mobile*/}
+        {mobile && (  
         <button
           aria-label="Menu"
           className={`${styles.mobileButton} ${
@@ -46,11 +48,11 @@ const UserHeaderNav = () => {
         <NavLink to="/conta/postar">
           <AdicionarFoto />
           {mobile && 'Adicionar Foto'}
-        </NavLink>
-        <button onClick={userLogout}>
-          <Sair />
+           </NavLink>
+           <NavLink to="conta/sair">
+              <Sair />
           {mobile && 'Sair'}
-        </button>
+        </NavLink>
       </nav>
     </>
   );
