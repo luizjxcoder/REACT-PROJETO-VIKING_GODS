@@ -8,33 +8,38 @@ import Login from './Components/Login/Login';
 import { UserStorage } from './UserContext';
 import User from './Components/User/User';
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
+import Photo from './Components/Photo/Photo';
+import UserProfile from './Components/User/UserProfile';
+import NotFound from './Components/NotFound';
 
-const App = () => {
-   return (
-      //ROTAS TELAS HOME E LOGIN
-      <div>
-         <BrowserRouter>
-            <UserStorage>
-            <Header />
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <UserStorage>
+          <Header />
+          <main className="AppBody">
             <Routes>
-               <Route path="/" element={<Home />} />
-               <Route path="login/*" element={<Login/>}/>
-                  <Route
-                     path="conta/*"
-                     element={
-                        <ProtectedRoute>
-                           <User />
-                        </ProtectedRoute>
-                     }
-                  />
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <Route
+                path="conta/*"
+                element={
+                  <ProtectedRoute>
+                    <User />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="foto/:id" element={<Photo />} />
+              <Route path="perfil/:user" element={<UserProfile />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
-               <Footer />
-               </UserStorage>
-         </BrowserRouter>
-      
-      </div>
-      // EM ROUTE /LOGIN/* O ASTERISTICO INDICA QUE HAVERÁ OUTRAS ROTAS
-   );
+          </main>
+          <Footer />
+        </UserStorage>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

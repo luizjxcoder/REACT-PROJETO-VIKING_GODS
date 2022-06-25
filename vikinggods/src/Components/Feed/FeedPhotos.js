@@ -28,7 +28,8 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
           <FeedPhotosItem
             key={photo.id}
             photo={photo}
-            setModalPhoto={setModalPhoto}
+              setModalPhoto={setModalPhoto}
+              setInfinite={setInfinite}
           />
         ))}
       </ul>
