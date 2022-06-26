@@ -9,25 +9,25 @@ const UserHeader = () => {
    const location = useLocation();
 
    React.useEffect(() => {
-      const { pathname } = location;
-      switch (pathname) {
-         case '/conta/postar':
-            setTitle('Poste sua Foto');
-            break;
-         case '/conta/estatisticas':
-            setTitle('Estatísticas');
-            break;
-         default:
-            setTitle('Meu Feed');
-      }
-   }, [location]);
+    const { pathname } = location;
+    switch (pathname) {
+      case '/conta/postar':
+        setTitle('Poste Sua Foto');
+        break;
+      case '/conta/estatisticas':
+        setTitle('Estatísticas');
+        break;
+      default:
+        setTitle('Meu Feed');
+    }
+  }, [location]);
 
   return (
-     <header className={styles.header}>
-        <h1 className="title">{title}</h1>
-        <UserHeaderNav/>
-     </header>
-  )
-}
+    <header className={styles.header}>
+      <h1 className="title">{title}</h1>
+      <UserHeaderNav />
+    </header>
+  );
+};
 
 export default UserHeader;
