@@ -15,6 +15,7 @@
 .single.photo {
   grid-template-columns: 1fr;
   height: auto;
+  width: 79%;
 }
 
 @keyframes scaleUp {
@@ -40,6 +41,8 @@
   grid-row: 1;
   border-radius: 0.4rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 64rem) {
