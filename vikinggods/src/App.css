@@ -19,6 +19,7 @@
   box-sizing: border-box;
 }
 body {
+  /* background: #eee; */
   padding-top: 4rem;
   margin: 0px;
   color: #333;
@@ -124,4 +125,8 @@ a {
 
 .AppBody {
   flex: 1;
+}
+
+.VictoryContainer {
+  height: initial !important;
 }

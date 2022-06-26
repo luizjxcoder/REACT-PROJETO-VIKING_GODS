@@ -18,6 +18,7 @@
 .forms {
   max-width: 30rem;
   padding: 1rem;
+  margin-top: 15vh;
 }
 
 @media (max-width: 40rem) {

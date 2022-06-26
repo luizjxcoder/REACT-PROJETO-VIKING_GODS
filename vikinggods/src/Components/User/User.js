@@ -14,13 +14,11 @@ const User = () => {
   return (
      <section className="container">
       <Head title="Minha Conta" />
-        
         <UserHeader />
         <Routes>
            <Route path="/" element={<Feed user={data.id} />} />
            <Route path="postar" element={<UserPhotoPost/>}/>
            <Route path="estatisicas" element={<UserStats />} />
-           <Route path="sair" element={<Feed />} />
            <Route path="*" element={<NotFound/>}/>
         </Routes>
         
