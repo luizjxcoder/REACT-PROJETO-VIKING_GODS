@@ -1,4 +1,4 @@
-*,
+/* *,
 *::after,
 *::before {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 1.5rem;
-}
+} 
 
 body,
 input,
@@ -31,14 +31,18 @@ h1,
 h2,
 h3 {
   font-family: var(--font-title);
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 p,
 ul {
   margin: 1rem 0;
+}
+
+h5 {
+   font-size: 50px;
 }
 
 ul {
@@ -47,14 +51,14 @@ ul {
 
 li {
   margin-bottom: 0.5rem;
-}
+} */
 
-label {
+/* label {
   display: block;
   margin-bottom: 0.25rem;
-}
+}  */ */
 
-input,
+/* input,
 textarea {
   display: block;
   border: 1px solid #ccc;
@@ -63,17 +67,17 @@ textarea {
   border-radius: var(--radius);
   background: #eee;
   transition: 0.2s;
-}
+} */
 
-input:focus,
+/* input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color);
   background: white;
   box-shadow: 0 0 0 3px var(--color-light);
-}
+} */
 
-button {
+/* button {
   cursor: pointer;
   border: none;
   border-radius: var(--radius);
@@ -81,9 +85,9 @@ button {
   background: var(--color);
   color: var(--color-dark);
   padding: 0.8rem 1.6rem;
-}
+} */
 
-button:hover,
+/* button:hover,
 button:focus {
   background: var(--color);
   box-shadow: 0 0 0 3px var(--color-light), 0 0 0 4px var(--color);
@@ -92,9 +96,9 @@ button:focus {
 
 button:active {
   box-shadow: 0 0 0 3px var(--color), 0 0 0 4px var(--color);
-}
+} */
 
-button:disabled {
+/* button:disabled {
   opacity: 0.5;
   cursor: wait;
 }

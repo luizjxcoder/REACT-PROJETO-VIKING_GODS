@@ -1,23 +1,30 @@
 .header {
   box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.1);
   position: fixed;
-  height: 80px;
+  padding: 0.5rem 0;
   width: 100%;
   z-index: 100;
   background: white;
   top: -17px;
 }
 
-.nav {
+.header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
 }
 
-.logo {
-  padding: 1rem 3px 0;
+/* Navigation */
+.header nav {
+  width: 820px;
 }
+
+.logo {
+  padding: 0.5rem 4px 0;
+  width: 55px;
+}
+
 
 .login {
   color: #333;
@@ -30,8 +37,14 @@
   display: inline-block;
   width: 35px;
   height: 40px;
-  background: url("../Assets/usuario.svg") no-repeat center center;
+  background: url("../Assets/title.svg") no-repeat center center;
   margin-left: 0.5rem;
   position: relative;
   top: -1px;
+}
+
+@media (max-width: 790px) {
+  .header nav {
+    width: 400px;
+  }
 }
