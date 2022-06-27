@@ -7,8 +7,9 @@
     ".vscode": false,
     ".gitignore": true,
     "package.json": true,
-    "package-lock.json": false,
-    "public": false,
+    "package-lock.json": true,
+    "public": true,
     ".dist":true
   }
 }
+

@@ -25,9 +25,9 @@
 .textarea:focus,
 .textarea:hover {
   outline: none;
-  border-color: #fb1;
-  background: white;
-  box-shadow: 0 0 0 3px #fea;
+  border-color: #6f39a9;
+  background: #ede7f4;
+  box-shadow: 0 0 0 3px #d2c4e4;
 }
 
 .button {
@@ -43,14 +43,14 @@
 .button:focus, /*HACK retira efeito e cor das bordas do elemento*/
 .button:hover {
   outline: none;
-  background: #fb1;
+  background: #6f39a9;
 }
 
 .button:focus svg path,/*HACK path seleciona todo svg, tanto borda com traçados internos podendo ser agrupados os detalhes da imagem*/
 .button:hover svg path {
   outline: none;
-  fill: white;
-  background: #fb1;
+  fill: #ede7f4;
+  background: #6f39a9;
 }
 
 .button:focus svg g,

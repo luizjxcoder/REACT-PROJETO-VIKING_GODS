@@ -5,8 +5,8 @@
   cursor: pointer;
   border: none;
   border-radius: 0.4rem;
-  background: #fb1;
-  color: #764701;
+  background: #9975C2;
+  color: #ede7f4;
   padding: 0.8rem 1.2rem;
   box-sizing: border-box;
   min-width: 8rem;
@@ -15,9 +15,9 @@
 
 button:hover,
 .button:focus {
-  background-color: #dda000;
+  background-color: #6f39a9;
   outline: none;
-  box-shadow: 0 0 0 3px #d4d3d3, 0 0 0 4px #fb1;
+  box-shadow: 0 0 0 3px #ede7f4, 0 0 0 4px #d2c4e4;
 }
 
 .button:disabled {
