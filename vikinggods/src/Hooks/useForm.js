@@ -16,11 +16,11 @@ const types = {
    //    },*/
 
    //REGEX PARA VALIAR NUMEROS NAS POSTAGENS
-         number: {
-         regex: /^\d+$/,
-         message: 'Utilize números apenas.',
-       },
-    };
+   //       number: {
+   //       regex: /^\d+$/,
+   //       message: 'Utilize números apenas.',
+   //     },
+     };
 
       const useForm = (type) => {
       const [value, setValue] = React.useState('');

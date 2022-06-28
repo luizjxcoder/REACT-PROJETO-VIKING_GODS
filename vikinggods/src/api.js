@@ -1,4 +1,4 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = 'http://jxcoder.local/json';
 
 export function TOKEN_POST(body) {
   return {

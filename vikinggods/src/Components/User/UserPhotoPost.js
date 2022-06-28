@@ -11,8 +11,8 @@ import { useNavigate } from 'react-router-dom';
 
 const UserPhotoPost = () => {
   const nome = useForm();
-  const peso = useForm('number');
-  const idade = useForm('number');
+  const referencia = useForm('text');
+  const caracteristicas = useForm('text');
   const [img, setImg] = React.useState({});
   const { data, error, loading, request } = useFetch();
   const navigate = useNavigate();
@@ -26,8 +26,8 @@ const UserPhotoPost = () => {
     const formData = new FormData();
     formData.append('img', img.raw);
     formData.append('nome', nome.value);
-    formData.append('peso', peso.value);
-    formData.append('idade', idade.value);
+    formData.append('referencia', referencia.value);
+    formData.append('caracteristicas', caracteristicas.value);
 
     const token = window.localStorage.getItem('token');
     const { url, options } = PHOTO_POST(formData, token);
@@ -47,8 +47,8 @@ const UserPhotoPost = () => {
       <Head title="Poste sua foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
-        <Input label="Peso" type="number" name="peso" {...peso} />
-        <Input label="Idade" type="number" name="idade" {...idade} />
+        <Input label="Referência" type="text" name="referencia" {...referencia} />
+        <Input label="Características" type="text" name="caracteristicas" {...caracteristicas} />
         <input
           className={styles.file}
           type="file"
