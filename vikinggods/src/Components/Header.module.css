@@ -17,7 +17,6 @@
 
 /* Navigation */
 
-
 .logo {
   padding: 20px 0 0;
   width: 250px;
@@ -38,10 +37,4 @@
   margin-left: 0.5rem;
   position: relative;
   top: -1px;
-}
-
-@media (max-width: 790px) {
-  .header nav {
-    width: 400px;
-  }
 }
