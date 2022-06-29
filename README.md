@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">VIKING GODS</h1>
 
-<img src="https://github.com/luizjxcoder/X-VELOX_MOTORBIKE/blob/master/CardGitmaterial-XVelox_Prancheta%201.png"/>
+<img src="https://github.com/luizjxcoder/REACT-PROJETO-VIKING_GODS/blob/master/cardviking.png" width="700" height="400"/>
 
 ### :atom: TECNOLOGIAS USADAS NO PROJETO:
 </div>
@@ -9,7 +9,7 @@
 <div align="center">
 <img src="https://github.com/luizjxcoder/X-VELOX_MOTORBIKE/blob/master/cadeirasemfundo.png" width="150" height="150"/> </div>
 <div align="center">
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></div>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"> </div>
 
 #
 ### :toolbox: FERRAMENTAS DE DESENVOLVIMENTO:
@@ -18,18 +18,17 @@
 ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 
 #
 ### :triangular_ruler: PROJETO
 ```
-<p> Front-End completo de um website criado com aprendizado adquirido no curso Web da ORIGAMID.
-Foi usado tecnologias como HTML, CSS, JAVASCRIPT e ferramentas como Adobe Photoshop e Illustrator
-para editar e redimensionar imagens, Adobe XD para prototipar o projeto e VsCode como IDE. Aplicando 
-técnicas mais avançadas de formatação usando Grid Layout e trabalhando com responsividade seguindo o 
-conceito Mobile First.
-Projeto está hospedado no site Vercel, click no link abaixo e visualize meu projeto em seu navegador!
+<p> Este é o meu primeiro projeto completo feito em React. O site é uma rede social de figuras da mitologia nórdicas, 
+onde são postados fotos e feito comentários nas fotos, assim como em uma rede social convêncional com o recurso de 
+gráficos na página do usuário que mostraas fotos mais acessadas. O síte foi criado com aprendizado adquirido no curso 
+de React da Origamid onde foi usado tecnologias como HTML, CSS, JAVASCRIPT, REACT, PHP e ferramentas como Adobe Photoshop
+e Illustrator para editar e redimensionar imagens, Adobe XD para prototipar o projeto e VsCode como IDE. O síte é totalmente
+responsividade seguindo o conceito Mobile First.
 </p>
 ```
 
@@ -49,9 +48,9 @@ Projeto está hospedado no site Vercel, click no link abaixo e visualize meu pro
 <div align="center">
     <img alt="Logo do projeto" src="https://github.com/luizjxcoder/luizjxcoder/blob/main/logo.png">
      <p>LINK DO MEU PROJETO NA VERCEL</p>
-    <h1>https://projeto-xvelox-motorbike.vercel.app/</h1>
+    <h1>https://</h1>
 </div>
 
-<img src="https://github.com/luizjxcoder/X-VELOX_MOTORBIKE/blob/master/motos-img/screenshot-projeto-xvelox1.png"/>
+<img src="  "/>
 
 
