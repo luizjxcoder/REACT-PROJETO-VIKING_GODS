@@ -24,12 +24,13 @@
 ### :triangular_ruler: PROJETO
 ```
 <p> Este é o meu primeiro projeto completo feito em React. O site é uma rede social de figuras da mitologia 
-nórdicas, onde são postados fotos e feito comentários nas fotos, assim como em uma rede social convêncional 
-com o recurso de gráficos na página do usuário que mostraas fotos mais acessadas. O síte foi criado com 
+nórdica, onde são postados fotos e feito comentários nas fotos, assim como em uma rede social convêncional 
+Conta com o recurso de gráficos na página do usuário que mostra os posts mais acessadas. O síte foi criado com 
 aprendizado adquirido no curso de React da Origamid onde foi usado tecnologias como HTML, CSS, JAVASCRIPT,
 REACT, PHP e ferramentas como Adobe Photoshope Illustrator para editar e redimensionar imagens, Adobe XD 
-para prototipar o projeto e VsCode como IDE. O síte é totalmenteresponsividade seguindo o conceito 
-Mobile First.
+para prototipar o projeto e VsCode como IDE. O síte é totalmente responsivo seguindo o conceito 
+Mobile First. No Backend foi criado uma API que controla todas as rotas de Posts, Gets, criação de usuário etc.
+A API tbm se encontra em meus repositórios.
 </p>
 ```
 
