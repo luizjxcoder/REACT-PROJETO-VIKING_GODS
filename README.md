@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">VIKING GODS</h1>
 
-<img src="https://github.com/luizjxcoder/REACT-PROJETO-VIKING_GODS/blob/master/cardviking.png" width="700" height="400"/>
+<img src="https://github.com/luizjxcoder/REACT-PROJETO-VIKING_GODS/blob/master/cardviking.png"/>
 
 ### :atom: TECNOLOGIAS USADAS NO PROJETO:
 </div>
